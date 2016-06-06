@@ -1,3 +1,22 @@
-h1 {
- color:aqua;   
+body {
+    font-family: lato, arial;
 }
+
+
+h1, p, h2, h3 {
+    font-weight: 900;
+}
+
+.row {
+    margin: .25em; 
+    padding: .2em;
+}
+
+.featured-work {
+    text-align: center;
+}
+
+.header-row {
+    border-bottom: .2em solid grey;
+}
+
