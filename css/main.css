@@ -1,9 +1,15 @@
 body {
     font-family: lato, arial;
+    background-color: black;
+    padding: .1em; 
 }
 
 
-h1, p, h2, h3 {
+h2, p, h2, h3 {
+    font-weight: 400;
+}
+
+h1 {
     font-weight: 900;
 }
 
@@ -14,9 +20,17 @@ h1, p, h2, h3 {
 
 .featured-work {
     text-align: center;
+    color: darkgoldenrod;
+}
+
+.featured-work>div>h2 {
+    text-align: left;
+    color: darkgoldenrod;
 }
 
 .header-row {
     border-bottom: .2em solid grey;
+    background-color: white;
+    margin-bottom: 1.2em;
 }
 
