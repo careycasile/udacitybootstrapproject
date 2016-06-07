@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
+    
 <body>
     <main>
         <div class="row header-row">
@@ -34,17 +37,17 @@
         </div>
         
         <div class="row featured-work">
-            <div class="col-md-4">
+            <div class="col-md-4" data-toggle="modal" data-target="#project1">
                 <img src="https://placehold.it/275x150" class="img-responsive"/>
                 <h3>Appify</h3>
                 <p>https://www.github.com/udacity/appify/</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-toggle="modal" data-target="#project2">
                 <img src="https://placehold.it/275x150" class="img-responsive"/>
                 <h3>Sunflower</h3>
                 <p>https://www.github.com/udacity/sunflower/</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-toggle="modal" data-target="#project3">
                 <img src="https://placehold.it/275x150" class="img-responsive"/>
                 <h3>Bokeh</h3>
                 <p>https://www.github.com/udacity/bokeh/</p>
@@ -52,5 +55,58 @@
         </div>
 
     </main>
+    
+<!--The three div's below are modals-->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center" id="myModalLabel">Appify App</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="img-responsive center-block" src="https://placehold.it/275x150">
+                    Appify allows you to customize and add to playlists on the go!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center" id="myModalLabel">Sunflower</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="img-responsive center-block" src="https://placehold.it/275x150">
+                    Sunflower allows you to download and upload music on the go!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center" id="myModalLabel">Bokeh</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="img-responsive center-block" src="https://placehold.it/275x150">
+                    Bokeh allows your phone to download music at twice the speed!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
